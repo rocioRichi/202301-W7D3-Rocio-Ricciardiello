@@ -1,3 +1,5 @@
+import { ErrorOptions } from 'commander';
+
 export interface CustomError extends Error {
   statusCode: number;
   statusMessage: string;
@@ -10,7 +12,7 @@ export class HTTPError extends Error implements CustomError {
     public message: string,
     public options?: ErrorOptions
   ) {
-    super(message, options);
+    super(message);
     this.name = 'HTTPError';
   }
 }

@@ -1,6 +1,6 @@
 import debug from 'debug';
 import { User } from '../entities/user';
-import { HTTPError } from '../errors/errors.js';
+import { HTTPError } from '../errors/errors';
 import { Repo } from './repo.interface';
 import { UserModel } from './users.mongo.model.js';
 
